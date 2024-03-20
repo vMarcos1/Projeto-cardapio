@@ -1,0 +1,13 @@
+@media screen and (min-width: 815px) {
+    .modal .item-dentro-carr {
+        min-width: 600px;
+        
+        
+    }
+
+    .titulo-bebidas {
+        text-align: center;
+    }
+    
+    
+}
