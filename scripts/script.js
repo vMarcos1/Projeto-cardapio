@@ -187,13 +187,13 @@ checkBtn.addEventListener('click', function() {
     }
 
     //Envir o pedido para a api do whatsapp
-    const itensCarrinho = cart.map((item) => {
+    const cartItens = cart.map((item) => {
         return (
             ` ${item.name} Quantidade: ${item.quantity} Preço: R$${item.price} |`
             
         )
     }).join("")
-    const message = encodeURIComponent(itensCarrinho)
+    const message = encodeURIComponent(cartItens)
     const phone = "77999012759"
 
     window.open(`https://wa.me/${phone}?text${message} Endereço:${addressInput.value} `, "_blank")
